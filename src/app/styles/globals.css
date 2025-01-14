@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* styles/globals.css */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  overflow-y: scroll; /* บังคับให้แสดง scrollbar */
+}
+
+
+/* styles/globals.css */
+
+@font-face {
+  font-family: 'Anakotmai';
+  src: url('/font/anakotmai-light.eot');
+  src: url('/font/anakotmai-light.eot?#iefix') format('embedded-opentype'),
+       url('/font/anakotmai-light.woff2') format('woff2'),
+       url('/font/anakotmai-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anakotmai';
+  src: url('/font/anakotmai-medium.eot');
+  src: url('/font/anakotmai-medium.eot?#iefix') format('embedded-opentype'),
+       url('/font/anakotmai-medium.woff2') format('woff2'),
+       url('/font/anakotmai-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Anakotmai';
+  src: url('/font/anakotmai-bold.eot');
+  src: url('/font/anakotmai-bold.eot?#iefix') format('embedded-opentype'),
+       url('/font/anakotmai-bold.woff2') format('woff2'),
+       url('/font/anakotmai-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Optionally, you can apply the font globally */
+body {
+  font-family: 'Anakotmai', sans-serif;
+}

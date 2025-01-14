@@ -1,0 +1,409 @@
+/* Home.module.css */
+
+/* พื้นฐาน */
+.container {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #e3f7ff, #ffffff);
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background-color: #0073e6;
+    color: white;
+    padding: 15px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* อนุญาตให้เมนูปรับตัวตามพื้นที่ */
+    gap: 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 0;
+}
+
+.navbar a:hover {
+    color: #ffdd57;
+}
+
+.navbar a:last-child {
+    margin-right: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffdd00;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navbar Responsive */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    position: relative; 
+}
+
+.navMenu {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* เรียงเมนูในแนวตั้ง */
+    }
+
+    .navMenu {
+        display: none; /* ซ่อนเมนูเริ่มต้น */
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        background-color: #0073e6;
+        padding: 10px;
+        border-radius: 5px;
+        align-items: flex-end;
+    }
+
+    .navMenu.show {
+        display: flex; /* แสดงเมนูเมื่อเปิด Hamburger */
+    }
+
+    .hamburger {
+        
+        display: block;
+        align-self: flex-end;
+    }
+}
+
+/* Hero Section */
+.heroSection {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: #0073e6;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 20px 0;
+}
+
+.viewMore {
+    background-color: #1a7529;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.viewMore:hover {
+    background-color: #30a121;
+}
+
+.viewMore:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0073e6;
+}
+
+.viewMore1 {
+    background-color: #daaa4b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.viewMore1:hover {
+    background-color: #ffd175;
+}
+
+.viewMore1:focus {
+    outline: none;
+    box-shadow: 0 0 5px #0073e6;
+}
+
+/* Search Section */
+.searchSection {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.userIcon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.userIcon:hover {
+    transform: scale(1.1);
+}
+
+/* Section Titles */
+.sectionTitle {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 40px;
+    padding: 8px 15px;
+    background-color: #4caf50;
+    border-radius: 1px;
+    text-align: center;
+    margin-left: 0;
+    width: auto;
+    max-width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTitle1 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 40px;
+    padding: 8px 15px;
+    background-color: #006699;
+    border-radius: 1px;
+    text-align: center;
+    margin-left: 0;
+    width: auto;
+    max-width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Search Bar */
+.searchBar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.searchButton {
+    background-color: #ffc14e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.searchButton:hover {
+    background-color: #e4b20e;
+    transform: scale(1.05);
+}
+
+.searchButton:active {
+    background-color: #d1a00b;
+}
+
+/* Card Grid */
+.cardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+}
+
+.cardImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cardTitle {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Card Links */
+.cardLink {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cardLink:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.cardLink:active {
+    background-color: #003f8a;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(to bottom, #0073e6, #005bb5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+/* More Section */
+.moreSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+/* Contact Section */
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-top: 1px solid #ccc;
+}
+
+.contactInfo {
+    width: 60%;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contactTitle {
+    font-size: 1.5rem; /* เพิ่มขนาดฟอนต์ให้ใหญ่ขึ้น */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0073e6;
+    font-family: 'Arial', sans-serif; /* เลือกฟอนต์ที่อ่านง่าย */
+    line-height: 1.4; /* เพิ่มระยะห่างระหว่างบรรทัด */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ฟอนต์ */
+}
+
+
+.contactForm {
+    width: 35%;
+}
+
+.contactFormTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0073e6;
+}
+
+.inputBox {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.submitButton {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    background-color: #005bb5;
+}

@@ -7,10 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        anakotmai: ['Anakotmai', 'sans-serif'],
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+    },
     },
   },
   plugins: [],
